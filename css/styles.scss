@@ -1,0 +1,110 @@
+// Primary colors
+$cyan: hsl(179, 62%, 43%);
+$brightYellow: hsl(71, 73%, 54%);
+
+// Neutral colors
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+// Media Query Mixins
+@mixin mediaMobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  color: $cyan;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: $brightYellow;
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.component {
+  box-shadow: 0 0 10px 5px rgba(136, 136, 136, 0.472);
+  max-width: 700px;
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section {
+  padding: 2.5rem;
+}
+
+.join {
+  flex-basis: 100%;
+  grid-column: 1 / 3;
+
+  p {
+    color: $grayishBlue;
+    line-height: 1.7;
+  }
+}
+
+.subscription {
+  background-color: $cyan;
+
+  .price {
+    color: $lightGray;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-right: 1rem;
+    }
+  }
+
+  p {
+    color: $lightGray;
+    margin: 0.9rem 0;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: $brightYellow;
+    color: $lightGray;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    text-shadow: 1px 1px 2px 2px #000;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.137);
+  }
+}
+
+.why-us {
+  background-color: hsl(179, 62%, 52%);
+
+  ul {
+    list-style: none;
+    color: #fff;
+
+    li {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
+}
