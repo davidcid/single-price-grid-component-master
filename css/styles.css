@@ -28,7 +28,7 @@ h3 {
 .component {
   -webkit-box-shadow: 0 0 10px 5px rgba(136, 136, 136, 0.472);
           box-shadow: 0 0 10px 5px rgba(136, 136, 136, 0.472);
-  max-width: 700px;
+  max-width: 650px;
   margin: 90px auto;
   display: -ms-grid;
   display: grid;
